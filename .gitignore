@@ -1,0 +1,32 @@
+# Entornos y cachés de Python
+.venv/
+venv/
+__pycache__/
+**/__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+# Artefactos generados por el compilador (se regeneran con el CLI)
+out/
+*.dot
+*.svg
+*.png
+!docs/**/*.svg
+!docs/**/*.png
+
+# Sistema operativo / editores
+.DS_Store
+.idea/
+.vscode/
+
+# Configuraciones locales del entorno Docker del curso
+configs
+
+# NOTA: los archivos que ANTLR genera en program/ (CompiscriptLexer.py,
+# CompiscriptParser.py, CompiscriptVisitor.py, CompiscriptListener.py, *.interp
+# y *.tokens) SI se versionan, para que el repositorio funcione recien clonado.
+# Nunca se editan a mano: se regeneran con ./scripts/generate_parser.sh.
+
+# Segunda mitad del proyecto, conservada solo en esta computadora
+/pendiente/

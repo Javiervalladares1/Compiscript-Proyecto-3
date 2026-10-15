@@ -1,0 +1,10 @@
+# La version del runtime debe coincidir con la del JAR usado para generar el
+# parser (antlr-4.13.1-complete.jar). Un desajuste hace que ANTLR aborte en
+# tiempo de ejecucion con un error de version.
+antlr4-python3-runtime==4.13.1
+
+# Pruebas
+pytest>=8.0,<9
+
+# IDE web (opcional para usar el compilador desde la linea de comandos)
+Flask>=3.0,<4
